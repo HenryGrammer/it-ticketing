@@ -15,6 +15,10 @@ import 'vue-good-table/dist/vue-good-table.css'
 import ToastPlugin from 'vue-toast-notification';
 import 'vue-toast-notification/dist/theme-bootstrap.css';
 
+import vSelect from 'vue-select'
+import 'vue-select/dist/vue-select.css';
+
+
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -30,6 +34,7 @@ import 'vue-toast-notification/dist/theme-bootstrap.css';
 
 Vue.use(VueGoodTablePlugin);
 Vue.use(ToastPlugin)
+Vue.component('v-select', vSelect)
 // Login
 Vue.component('login-component', require('./components/Login/LoginComponent.vue').default);
 // User

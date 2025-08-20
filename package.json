@@ -25,6 +25,7 @@
     },
     "dependencies": {
         "vue-good-table": "^2.21.11",
+        "vue-select": "^3.20.4",
         "vue-toast-notification": "^1.0.1"
     }
 }

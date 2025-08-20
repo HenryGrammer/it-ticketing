@@ -67,7 +67,23 @@
                         <h6 class="modal-title">Add new user</h6>
                     </div>
                     <div class="modal-body">
-                        
+                        <div class="row">
+                            <div class="col-md-12">
+                                Name :
+                                <input type="text" name="" class="form-control" required>
+                            </div>
+                            <div class="col-md-12">
+                                Email :
+                                <input type="email" name="" class="form-control" required>
+                            </div>
+                            <div class="col-md-12">
+                                Department :
+                                <!-- <v-select :options="['Canada', 'United States']"></v-select> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Save</button>
                     </div>
                 </div>
             </div>
