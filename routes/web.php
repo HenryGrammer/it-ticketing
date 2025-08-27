@@ -20,8 +20,14 @@ Auth::routes();
 Route::group(['middleware' => 'auth'], function() {
     Route::get('/home', 'HomeController@index')->name('home');
 
+    // Users
     Route::get('users','UserController@index');
     Route::prefix('users')->group(function() {
         Route::get('list','UserController@list');
+        Route::post('store','UserController@store');
+        Route::get('edit/{id}', 'UserController@edit');
+        Route::post('update/{id}', 'UserController@update');
+        Route::post('activate/{id}', 'UserController@activate');
+        Route::post('deactivate/{id}', 'UserController@deactivate');
     });
 });

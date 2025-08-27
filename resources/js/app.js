@@ -18,7 +18,9 @@ import 'vue-toast-notification/dist/theme-bootstrap.css';
 import vSelect from 'vue-select'
 import 'vue-select/dist/vue-select.css';
 
-
+// Components
+import Navbar from './components/NavbarComponent.vue';
+import ActionButton from './components/ActionButtonComponent.vue';
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -35,13 +37,11 @@ import 'vue-select/dist/vue-select.css';
 Vue.use(VueGoodTablePlugin);
 Vue.use(ToastPlugin)
 Vue.component('v-select', vSelect)
+
 // Login
 Vue.component('login-component', require('./components/Login/LoginComponent.vue').default);
 // User
 Vue.component('users-component', require('./components/User/UserComponent.vue').default);
-
-// Layouts
-Vue.component('navbar-component', require('./components/Navbar.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -50,5 +50,9 @@ Vue.component('navbar-component', require('./components/Navbar.vue').default);
  */
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+    components: {
+        navbar: Navbar,
+        actionButton: ActionButton
+    }
 });

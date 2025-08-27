@@ -15,8 +15,9 @@
             class="navbar-nav-right d-flex align-items-center"
             id="navbar-collapse"
         >
+            <h4 class="m-0">{{ title }}</h4>
             <!-- Search -->
-            <div class="navbar-nav align-items-center">
+            <!-- <div class="navbar-nav align-items-center">
                 <div class="nav-item d-flex align-items-center">
                     <i class="bx bx-search fs-4 lh-0"></i>
                     <input
@@ -26,12 +27,12 @@
                         aria-label="Search..."
                     />
                 </div>
-            </div>
+            </div> -->
             <!-- /Search -->
 
             <ul class="navbar-nav flex-row align-items-center ms-auto">
                 <!-- Place this tag where you want the button to render. -->
-                <li class="nav-item lh-1 me-3">
+                <!-- <li class="nav-item lh-1 me-3">
                     <a
                         class="github-button"
                         href="https://github.com/themeselection/sneat-html-admin-template-free"
@@ -41,7 +42,7 @@
                         aria-label="Star themeselection/sneat-html-admin-template-free on GitHub"
                         >Star</a
                     >
-                </li>
+                </li> -->
 
                 <!-- User -->
                 <li class="nav-item navbar-dropdown dropdown-user dropdown">
@@ -141,6 +142,9 @@
 import api from '../api'
 
 export default {
+    props: {
+        title: String
+    },
     methods: {
         async logout()
         {
