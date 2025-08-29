@@ -42,6 +42,8 @@ Vue.component('v-select', vSelect)
 Vue.component('login-component', require('./components/Login/LoginComponent.vue').default);
 // User
 Vue.component('users-component', require('./components/User/UserComponent.vue').default);
+// Company
+Vue.component('company-component', require('./components/Company/CompanyComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

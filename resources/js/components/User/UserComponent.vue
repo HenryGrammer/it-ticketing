@@ -307,7 +307,6 @@ export default {
                     position:'bottom-right'
                 })
             } catch (error) {
-                console.error(error);
                 this.$toast.open({
                     message: error.message,
                     type:'error',

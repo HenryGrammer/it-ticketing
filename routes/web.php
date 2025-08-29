@@ -30,4 +30,7 @@ Route::group(['middleware' => 'auth'], function() {
         Route::post('activate/{id}', 'UserController@activate');
         Route::post('deactivate/{id}', 'UserController@deactivate');
     });
+
+    // Companies
+    Route::get('companies','CompanyController@index');
 });
